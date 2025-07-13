@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Share style */
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+.panda-button{
+    border-radius: 6px;
+    border: none;
+    background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%, rgb(255, 19, 111) 99.994%);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 25px;
+    
+}
+/* NAV-BAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+#search-bar {
+    position: relative;
+    color: #BABABA;
+
+}
+
+#search-bar input {
+    border-radius: 66px;
+    background: rgb(241, 241, 241);
+    padding: 15px 30px;
+    width: 500px;
+    border: none;
+}
+
+#search-bar i {
+    position: absolute;
+    top: 17px;
+    right: 12px;
+
+}
+
+.nav-item {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Banner */
+.banner {
+    background-color: #FEEAE9;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.banner-details h2 {
+    color: rgb(31, 31, 31);
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.banner-details p {
+    color: #4e4e4ebe;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 400px;
+   
+}
+
+.banner-details span {
+    color: rgb(255, 19, 111);
+    font-size: 41px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.banner-image img {
+    width: 402px;
+    height: 378px;
+}
+/* Categories */
+.categories{
+
+}
+.categories h2{
+    margin-top: 50px;
+    margin-left: 55px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+}
+.categorey-item{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 350px;
+    gap: 90px;
+}
+.card img{
+   width: 80px;
+   height: 80px;
+}
+.card h3{
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.watch{
+   background: linear-gradient(151.85deg, rgb(255, 156, 53) 14.537%,rgb(255, 208, 25) 84.486%);
+   padding: 2px 40px;
+   border-radius: 15px;
+}
+.bag{
+   background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%,rgb(255, 19, 111) 99.994%);
+   padding: 2px 40px;
+   border-radius: 15px;
+}
+.shoes{
+   background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%,rgb(63, 7, 248) 74.29%);
+   padding: 2px 40px;
+   border-radius: 15px;
+}
