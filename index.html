@@ -24,13 +24,19 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <ul class="nav-item">
-                <li><a href="">Home</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categorey">Categories</a></li>
+                <li class="product-li"><a href="#product">Product <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#shoe">Shoes</a></li>
+                    <li><a href="#bag">Bags</a></li>
+                    
+                </ul>
+                </li>
+                <li><a href="#contact-us">Contact Us</a></li>
             </ul>
         </nav>
-        <section class="banner container">
+        <section class="banner container" id="home">
            <div class="banner-details">
                     <h2>Mi LED TV 4A PRO 32</h2>
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor
@@ -45,7 +51,7 @@
             
                
         </section>
-        <section class="categories container">
+        <section class="categories container" id="categorey">
             <h2>Categories</h2>
             <div class="categorey-item">
                 <div class="card watch">
@@ -62,7 +68,81 @@
                 </div>
             </div>
         </section>
+        <section class="shoes-bag" id="product">
+            <div class="shoe container" id="shoe">
+                <div class="title">
+                    <h2>Shoes</h2>
+                    <a href="">see all</a>
+                </div>
+            <div class="shoe-cont">
+                <div class="shoe-card">
+                    <img src="./images/shoes/shoe-1.png" alt="">
+                    <h3>Reebok Dart Men’s Shoes</h3>
+                    <p>Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint.</p>
+                    <span class="price">$1289</span> <br>
+                    <button class="panda-button">Buy Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+                <div class="shoe-card">
+                    <img src="./images/shoes/shoe-2.png" alt="">
+                    <h3>Reebok Dart Men’s Shoes</h3>
+                    <p>Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint.</p>
+                    <span class="price">$1289</span> <br>
+                    <button class="panda-button">Buy Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+                <div class="shoe-card">
+                    <img src="./images/shoes/shoe-3.png" alt="">
+                    <h3>Reebok Dart Men’s Shoes</h3>
+                    <p>Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint.</p>
+                    <span class="price">$1289</span> <br>
+                    <button class="panda-button">Buy Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+            </div>
+        </div>
+            <div class="shoe container" id="bag">
+                <div class="title">
+                    <h2>Bags</h2>
+                    <a href="">see all</a>
+                </div>
+            <div class="shoe-cont">
+                <div class="bags shoe-card">
+                    <img src="./images/bags/bag-1.png" alt="" >
+                    <h3>Reebok Dart Men’s Shoes</h3>
+                    <p>Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint.</p>
+                    <span class="price">$1289</span> <br>
+                    <button class="panda-button">Buy Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+                <div class="bags shoe-card">
+                    <img src="./images/bags/bag-2.png" alt="" >
+                    <h3>Reebok Dart Men’s Shoes</h3>
+                    <p>Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint.</p>
+                    <span class="price">$1289</span> <br>
+                    <button class="panda-button">Buy Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+                <div class="bags shoe-card">
+                    <img src="./images/bags/bag-3.png" alt="" >
+                    <h3>Reebok Dart Men’s Shoes</h3>
+                    <p>Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint.</p>
+                    <span class="price">$1289</span> <br>
+                    <button class="panda-button">Buy Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+            </div>
+        </div>
+        </section>
     </main>
+    <footer class="container" id="contact-us">
+        <h2>LET'S STAY IN TOUCH</h2>
+        <p>Get updates on sales specials and more</p>
+       <div class="contact-input">
+        <input type="email" name="" id="" placeholder="Enter your email">
+        <button class="panda-button">Send</button>
+       </div>
+    </footer>
 </body>
 
 </html>

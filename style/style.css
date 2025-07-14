@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Share style */
@@ -45,7 +46,31 @@ nav {
     right: 12px;
 
 }
-
+.product-li{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    list-style: none;
+    background-color:white;
+    top: 60%;
+    left: -20px;
+    width: 120px;
+    padding: 5px 0px;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    box-shadow: 2px 0px 8px 0px rgba(0 0 0 /15%);
+    visibility: hidden;
+    
+}
+.dropdown-menu li{
+    margin: 5px 0;
+}
+.product-li:hover .dropdown-menu{
+    visibility: visible;
+    top: 100%;
+    transition: .5s;
+}
 .nav-item {
     display: flex;
     list-style: none;
@@ -100,31 +125,35 @@ nav {
 }
 /* Categories */
 .categories{
+    margin:64px 156px;
 
 }
 .categories h2{
-    margin-top: 50px;
-    margin-left: 55px;
-    margin-bottom: 20px;
+     /* margin-top: 50px; */
+    /* margin-left: 55px; */
+    /* margin-bottom: 20px; */ 
     font-size: 36px;
     font-weight: 600;
     color: black;
 }
 .categorey-item{
     display: flex;
-    justify-content: space-around;
+    gap: 26px;
+    width: 100%;
    
 }
+
 .card{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 350px;
-    gap: 90px;
+    padding: 30px;
+    gap: 30px;
+    flex: 1;
 }
 .card img{
-   width: 80px;
-   height: 80px;
+   width: 100px;
+   height: 100px;
 }
 .card h3{
     font-size: 36px;
@@ -145,4 +174,85 @@ nav {
    background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%,rgb(63, 7, 248) 74.29%);
    padding: 2px 40px;
    border-radius: 15px;
+}
+/* Shoes and Bags */
+.shoes-bag{
+    background: rgb(244, 244, 244);
+    margin-bottom: 100px;
+    padding: 50px 140px;
+   
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.title a{
+   display: block;
+   margin-top: 50px;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 500;
+   color:#FF9D00;
+}
+.title h2{
+   font-size: 36px;
+   font-weight: 600;
+   color:#1F1F1F;
+
+}
+
+.shoe-cont{
+    display: flex;
+    gap: 20px;
+}
+.shoe-card{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+}
+.shoe-card img{
+    width: 330px;
+    height: 200px;
+}
+.price{
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+}
+.shoe-card button{
+    background: black;
+}
+.bags img{
+  width: 250px;
+  height: 200px;
+}
+footer{
+    text-align: center;
+    border-radius: 10px;
+    background: rgb(255, 242, 241);
+    padding: 80px ;
+}
+footer h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+footer p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #707070;
+}
+.contact-input{
+    display: flex;
+    justify-content: center;
+}
+.contact-input input{
+    border: none;
+    padding: 17px 150px;
+    border-radius: 5px;
+}
+.contact-input button{
+    border-top-left-radius:0px ;
+    border-bottom-left-radius:0px ;
+    padding: 10px 40px;
 }
